@@ -5,7 +5,7 @@
 Kullanıcıların Steam'deki herhangi bir oyun için, istedikleri dilde ve sayıda yorumu, seçtikleri veri sütunlarıyla birlikte temiz bir CSV dosyası olarak indirmelerini sağlayan bir masaüstü uygulaması.
 
 
-![Uygulama Ekran Görüntüsü](images/screenshot.png) 
+![Uygulama Ekran Görüntüsü](assets/app.png) 
 
 ---
 
