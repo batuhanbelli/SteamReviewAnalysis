@@ -57,6 +57,7 @@ Follow the steps below to run this project on your local machine.
 
 4.  **Run the Application:**
     ```sh
+    py -m venv venv
     python main.py
     ```
 
