@@ -60,7 +60,7 @@ Follow the steps below to run this project on your local machine.
 
 4.  **Run the Application:**
     ```sh
-    python main.py
+    python steam_review.py
     ```
 
 ### Usage
