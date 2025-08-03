@@ -1,8 +1,8 @@
-# Steam Yorum İndirme Aracı (Steam Review Extractor)
+# Steam Review Extractor
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 
-Kullanıcıların Steam'deki herhangi bir oyun için, istedikleri dilde ve sayıda yorumu, seçtikleri veri sütunlarıyla birlikte temiz bir CSV dosyası olarak indirmelerini sağlayan bir masaüstü uygulaması.
+A desktop application that allows users to download reviews for any Steam game in their desired language and quantity, with selectable data columns, saved as a clean CSV file.
 
 
 ![Uygulama Ekran Görüntüsü](assets/app.png) 
@@ -10,76 +10,66 @@ Kullanıcıların Steam'deki herhangi bir oyun için, istedikleri dilde ve sayı
 ---
 
 
-###  Özellikler
+### Features
 
-* **Dinamik Veri Çekme:** Herhangi bir Steam oyununun linkini yapıştırarak yorumları çekme.
-* **Özelleştirilebilir Veri Miktarı:** Çekilecek sayfa sayısını belirleyerek indirilecek yorum miktarını kontrol etme.
-* **Çoklu Dil Desteği:** Yorumları belirli bir dilde (İngilizce, Türkçe, Almanca vb.) veya tüm dillerde indirme seçeneği.
-* **Esnek Sütun Seçimi:** İhtiyaç duyulan veri sütunlarını (yazar, oynama süresi, yorum metni vb.) arayüz üzerinden seçme.
-* **Temiz Çıktı:** Seçilen verileri doğrudan analizde kullanılabilecek, temiz bir `.csv` dosyası olarak kaydetme.
-* **Kullanıcı Dostu Arayüz:** `CustomTkinter` ile oluşturulmuş modern ve kolay kullanımlı bir masaüstü uygulaması.
-
----
-
-###  Kullanılan Teknolojiler
-
-Bu proje aşağıdaki teknolojiler ve kütüphaneler kullanılarak geliştirilmiştir:
-
-* **Python:** Ana programlama dili.
-* **CustomTkinter:** Modern ve kullanıcı dostu arayüz tasarımı için.
-* **Pandas:** Verileri işlemek, filtrelemek ve CSV olarak kaydetmek için.
-* **Requests:** Steam Web API'sine HTTP istekleri göndermek için.
+* **Dynamic Data Fetching:** Fetch reviews by simply pasting the link of any Steam game.
+* **Customizable Data Volume:** Control the number of reviews to download by specifying the number of pages to fetch.
+* **Multi-Language Support:** Option to download reviews in a specific language (e.g., English, Turkish, German) or all languages.
+* **Flexible Column Selection:** Choose the required data columns (author, playtime, review text, etc.) through the user interface.
+* **Clean Output:** Save the selected data as a clean `.csv` file, ready for direct use in analysis.
+* **User-Friendly Interface:** A modern and easy-to-use desktop application built with `CustomTkinter`.
 
 ---
 
-###  Kurulum ve Başlangıç
+### Technologies Used
 
-Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
+This project was developed using the following technologies and libraries:
+
+* **Python:** The main programming language.
+* **CustomTkinter:** For designing the modern and user-friendly interface.
+* **Pandas:** For processing, filtering, and saving data as a CSV file.
+* **Requests:** For sending HTTP requests to the Steam Web API.
+
+---
+
+### Installation and Getting Started
+
+Follow the steps below to run this project on your local machine.
 
 
-#### Kurulum Adımları
+#### Installation Steps
 
-1.  **Projeyi Klonlayın:**
+1.  **Clone the Project:**
     ```sh
-    git clone [https://github.com/](https://github.com/)[SENİN-GITHUB-KULLANICI-ADIN]/[PROJE-ADI].git
+    git clone [https://github.com/](https://github.com/)[YOUR-GITHUB-USERNAME]/[PROJECT-NAME].git
     ```
 
-2.  **Proje Klasörüne Gidin:**
+2.  **Navigate to the Project Directory:**
     ```sh
-    cd [PROJE-ADI]
+    cd [PROJECT-NAME]
     ```
 
-3.  **Gerekli Kütüphaneleri Yükleyin:**
-    Proje için gerekli tüm kütüphaneler `requirements.txt` dosyasında listelenmiştir. Aşağıdaki komut ile hepsini tek seferde kurabilirsiniz.
+3.  **Install the Required Libraries:**
+    All necessary libraries for the project are listed in the `requirements.txt` file. You can install them all at once with the following command.
     ```sh
     pip install -r requirements.txt
     ```
 
-4.  **Uygulamayı Çalıştırın:**
+4.  **Run the Application:**
     ```sh
-    python main.py 
+    python main.py
     ```
-    *(`main.py` yerine kendi ana dosyanızın adını yazın)*
+
+### Usage
+
+1.  Run the application.
+2.  Paste the Steam store link of the game you want to analyze.
+3.  Specify the number of pages of reviews you want to fetch.
+4.  Select the desired language for the reviews.
+5.  Check the data columns you wish to download.
+6.  Click the "Fetch and Download Data" button.
+7.  In the dialog box that opens, choose the location and file name to save your file.
 
 ---
 
-###  Kullanım
-
-1.  Uygulamayı çalıştırın.
-2.  İlgili alana Steam Web API anahtarınızı girin.
-3.  Analiz etmek istediğiniz oyunun Steam mağaza linkini yapıştırın.
-4.  Kaç sayfa yorum çekmek istediğinizi belirtin.
-5.  Yorumların hangi dilde olmasını istediğinizi seçin.
-6.  İndirmek istediğiniz veri sütunlarını işaretleyin.
-7.  "Veriyi Çek ve İndir" butonuna tıklayın.
-8.  Açılan pencerede dosyayı kaydetmek istediğiniz konumu ve dosya adını seçin.
-
----
-
-###  Gelecekteki Geliştirmeler
-
-* [ ] Veri çekme işlemi tamamlandığında temel analizleri (pozitif/negatif oranı, kelime bulutu vb.) doğrudan uygulama içinde gösterme.
-* [ ] `PyInstaller` gibi araçlarla projeyi tek tıklamayla çalıştırılabilen bir `.exe` dosyasına dönüştürme.
-* [ ] Yorumları oynama süresine göre filtreleme seçeneği ekleme (örn: Sadece 10 saatten fazla oynamış olanların yorumlarını indir).
-
----
+The project is still evolving. Feel free to open an issue to suggest a feature or submit your own pull request
