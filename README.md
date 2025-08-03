@@ -42,7 +42,8 @@ Follow the steps below to run this project on your local machine.
 
 1.  **Clone the Project:**
     ```sh
-    git clone [https://github.com/](https://github.com/)[YOUR-GITHUB-USERNAME]/[PROJECT-NAME].git
+     git clone https://github.com/batuhanbelli/SteamReviewAnalysis.git
+
     ```
 
 2.  **Navigate to the Project Directory:**
