@@ -52,12 +52,12 @@ Follow the steps below to run this project on your local machine.
 3.  **Install the Required Libraries:**
     All necessary libraries for the project are listed in the `requirements.txt` file. You can install them all at once with the following command.
     ```sh
+    py -m venv venv
     pip install -r requirements.txt
     ```
 
 4.  **Run the Application:**
     ```sh
-    py -m venv venv
     python main.py
     ```
 
